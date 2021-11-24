@@ -1,5 +1,5 @@
 let db;
-table = document.getElementById("table");
+let table = document.getElementById("table");
 
 export async function createDB() {
     db = await idb.openDB("DB", 1, {upgrade(db) {
