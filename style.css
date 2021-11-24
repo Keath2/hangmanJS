@@ -18,3 +18,7 @@ button {
 .game-menu {
     display: none;
 }
+
+.game-menu-down {
+    margin-top: 20px;
+}

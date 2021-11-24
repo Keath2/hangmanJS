@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/idb@5/build/iife/index-min.js"></script>
     <title>hangman</title>
     
 </head>
@@ -22,6 +23,17 @@
             <input type="text" id="enter-letter" onkeydown="if (event.keyCode == 13) document.getElementById('btn-enter-letter').click()">
             <button id="btn-enter-letter">Ввести</button>
             <button id="restart-game">Начать заново</button>
+            <button id="show-games">Список игр</button><br>
+            <div class="game-menu-down">
+                <a>Введите id для повтора:</a>
+                <input type="text" id="id-select-game" onkeydown="if (event.keyCode == 13) document.getElementById('start-replay').click()">
+                <button id="start-replay">Показать сыгранную игру</button>
+                <div>
+                    <table border="1" id="table" align="center">
+
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     <script src="Controller.js" type="module"></script>
